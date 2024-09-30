@@ -4,6 +4,29 @@ import { Image } from "astro:assets";
 import surf3 from "../assets/images/surf3.jpg";
 import surf4 from "../assets/images/surf4.jpg";
 import musik from "../assets/images/musik.jpg";
+const schemamarkup = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  mainEntityOfPage: {
+    "@type": "WebPage",
+    "@id": "https://artikelsurfrock.netlify.app/",
+  },
+  headline: "Surfrock: Bølgernes Musik og Ungdommens Frihed",
+  image: ["https://artikelsurfrock.netlify.app/_astro/surf4.8V3CIdad_19uhey.webp", "https://artikelsurfrock.netlify.app/_astro/surf3.S9NJ8cZB_IalMi.webp", "https://artikelsurfrock.netlify.app/_astro/musik.uSbPqOqa_Z2eAe78.webp"],
+  author: {
+    "@type": "Person",
+    name: "Hui-jin",
+  },
+  publisher: {
+    "@type": "Organization",
+    name: "",
+    logo: {
+      "@type": "ImageObject",
+      url: "",
+    },
+  },
+  datePublished: "",
+};
 ---
 
 <MainLayout title="Surfrock" description="Surfrock er en musikgenre, der opstod i Californien i slutningen af 1950'erne og blev populær i 1960'erne." ogtitle="Surfrock: Bølgernes Musik og Ungdommens Frihed" ogdescription="Genren fanger essensen af surfkultur og bringer billeder af bølger, strandliv og ungdommelig frihed">
@@ -43,3 +66,4 @@ import musik from "../assets/images/musik.jpg";
     </article>
   </section>
 </MainLayout>
+<script type="application/ld+json" set:html={JSON.stringify(schemamarkup)} defer="defer" />
