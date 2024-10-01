@@ -4,6 +4,7 @@ import { Image } from "astro:assets";
 import surf3 from "../assets/images/surf3.jpg";
 import surf4 from "../assets/images/surf4.jpg";
 import musik from "../assets/images/musik.jpg";
+import hero from "../assets/images/hero.png";
 const schemamarkup = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
@@ -31,7 +32,7 @@ const schemamarkup = {
 
 <MainLayout title="Surfrock" description="Surfrock er en musikgenre, der opstod i Californien i slutningen af 1950'erne og blev populær i 1960'erne." ogtitle="Surfrock: Bølgernes Musik og Ungdommens Frihed" ogdescription="Genren fanger essensen af surfkultur og bringer billeder af bølger, strandliv og ungdommelig frihed">
   <section class="relative w-full">
-    <Image src={surf4} alt="surfing" class="w-full h-auto object-contain" />
+    <Image src={hero} alt="surfing" class="w-full h-auto object-contain" />
     <h1 class="absolute inset-0 flex items-center justify-center text-white text-2xl p-4 md:text-5xl md:p-0 font-bold bg-black/50">Surfrock: Bølgernes Musik <br />og Ungdommens Frihed</h1>
   </section>
   <section class="p-4 md:p-0">
