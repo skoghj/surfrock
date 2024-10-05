@@ -38,7 +38,14 @@ const schemamarkup = {
       <article class="flex flex-col mx-auto pt-8 max-w-2xl prose md:py-20">
         <h2>Musikken der Fanger Bølgerne</h2>
         <p class="mb-0">Surfrock er en musikgenre, der opstod i Californien i slutningen af 1950'erne og blev populær i 1960'erne. Genren fanger essensen af surfkultur og bringer billeder af bølger, strandliv og ungdommelig frihed. Den kombinerer energiske guitarer med en karakteristisk reverb-effekt, hvilket giver en følelse af at være tæt på havets brusen. Gennem sine melodier inviterer surfrock lytterne til at drømme om solrige dage ved stranden og det frie liv, som surfkulturen repræsenterer.</p>
-        <Image src={surf3} alt="surfing" />
+
+        <section class="grid grid-cols-5 grid-rows-5">
+          <img src="hav.webp" class="col-start-1 col-span-5 row-start-1 row-span-5 z-0" />
+          <img src="california.webp" class="col-start-1 col-span-5 row-start-1 row-span-5 z-10" />
+          <img src="lp.webp" class="col-start-4 col-span-5 row-start-1 row-span-5 z-30" />
+          <img src="beachboys.webp" class="col-start-2 col-span-4 row-start-2 row-span-5 z-50 animate__animated animate__jackInTheBox animate__infinite animate__slow" />
+        </section>
+
         <hr />
         <h2>Lyden af Surfkultur</h2>
         <p class="mb-0">Surfrock er præget af:</p>
